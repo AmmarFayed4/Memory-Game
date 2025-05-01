@@ -6,6 +6,8 @@
 - **Smooth Animations & Transitions** – Styled with CSS for an engaging user experience.
 - **Responsive Design** – Works across different screen sizes for accessibility.
 - **Score Tracking & Timer** – Enhances challenge and replayability.
-  (I done this when i was 18 so its a bit childish)
+
+
+ - (I done this when i was 18 so its a bit childish)
 
 https://ammarfayed4.github.io/Memory-Game/
