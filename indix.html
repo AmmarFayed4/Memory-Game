@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory_Game</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'></link> 
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <div class="con-butns">
+        <span>Start Game</span>
+    </div>  
+    <div class="A2">
+        <span >Game over!</span>
+    </div>
+    <div class="A3">
+        <span>Congratulations!!</span>
+    </div>
+    <div class ="info-container">
+        <div class="Name">
+            Hello:<span></span>
+        </div>
+        <div class="tries">
+            Wrong Tries:<span>0</span>
+        </div>      
+        <div class="timer">
+            The left time:<span>80</span>
+        </div>         
+        <div class="try">
+            correct Tries:<span class="cor-t">0</span>
+        </div>
+    </div>
+    <div class="score-container">
+       <ul>
+        
+       </ul>
+    </div>
+    <div class="MG-Blocks">
+        <div class="game-block" data-tech="A1">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="./images/A1.jpg" alt="A1">
+            </div>
+        </div> 
+        <div class="game-block" data-tech="A1">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="./images/A1.jpg" alt="A1">
+            </div>
+        </div>
+        <div class="game-block" data-tech="B2">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="./images/B2.jpg" alt="B2">
+            </div>
+        </div> 
+        <div class="game-block" data-tech="B2">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="./images/B2.jpg" alt="B2">
+            </div>
+        </div>
+        <div class="game-block" data-tech="C3">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="./images/C3.jpg" alt="C3">
+            </div>
+        </div> 
+        <div class="game-block" data-tech="C3">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="./images/C3.jpg" alt="C3">
+            </div>
+        </div>
+        <div class="game-block" data-tech="D4">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="./images/D4.jpg" alt="D4">
+            </div>
+        </div> 
+        <div class="game-block" data-tech="D4">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="./images/D4.jpg" alt="D4">
+            </div>
+        </div>
+        <div class="game-block" data-tech="E5">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="./images/E5.jpg" alt="E5">
+            </div>
+        </div> 
+        <div class="game-block" data-tech="E5">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="./images/E5.jpg" alt="E5">
+            </div>
+        </div>
+        <div class="game-block" data-tech="F6">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="./images/F6.jpg" alt="F6">
+            </div>
+        </div> 
+        <div class="game-block" data-tech="F6">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="./images/F6.jpg" alt="F6">
+            </div>
+        </div>
+        <div class="game-block" data-tech="G7">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="./images/G7.jpg" alt="G7">
+            </div>
+        </div> 
+        <div class="game-block" data-tech="G7">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="./images/G7.jpg" alt="G7">
+            </div>
+        </div>
+        <div class="game-block" data-tech="H8">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="./images/H8.jpg" alt="H8">
+            </div>
+        </div> 
+        <div class="game-block" data-tech="H8">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="./images/H8.jpg" alt="H8">
+            </div>
+        </div>
+        <div class="game-block" data-tech="I9">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="./images/I9.jpg" alt="I9">
+            </div>
+        </div> 
+        <div class="game-block" data-tech="I9">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="./images/I9.jpg" alt="I9">
+            </div>
+        </div>
+        <div class="game-block" data-tech="J10">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="./images/J10.jpg" alt="J10">
+            </div>
+        </div> 
+        <div class="game-block" data-tech="J10">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="./images/J10.jpg" alt="J10">
+            </div>
+        </div>
+    </div>
+    <audio src="./audios/fail.mp3" id="fail" preload="auto"></audio>
+    <audio src="./audios/Congratulations(MP3_160K)(3).mp3" id="cong" preload="auto"></audio>
+    <audio src="./audios/luf.mp3" id="luf" preload="auto" ></audio>
+    <audio src="./audios/suc.mp3" id = "suc" preload="auto"></audio>
+    <audio src="./audios/GO.mp3" id = "GO" preload="auto"></audio>
+    <script src="main.js"></script>
+</body>
+</html>
